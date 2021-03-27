@@ -6,7 +6,18 @@ namespace StackOverflowExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var post = new Post();
+            post.Title = "Hellllpppppp";
+            post.Description = "I need help";
+
+            post.DownVote();
+            post.DownVote();
+            post.DownVote();
+            post.DownVote();
+
+            post.UpVote();
+
+            post.DisplayCurrentVotes();
         }
     }
 }
